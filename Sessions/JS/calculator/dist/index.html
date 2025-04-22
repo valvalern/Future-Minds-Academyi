@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="calculator">
+   <div class="header">
+      <div class="window">
+         <span class="red"></span>
+         <span class="yellow"></span>
+         <span class="green"></span>
+      </div>
+      <div class="input">
+         1378 - 12 = <span>1336</span>
+      </div>
+   </div>
+   <div class="keys">
+      <div class="row">
+         <div class="number">
+            <span onclick="calc(7);" >7</span>
+            <span  onclick="calc(8);">8</span>
+            <span  onclick="calc(9);">9</span>
+         </div>
+         <div class="symbol">
+            <span  onclick="calc('/');">÷</span>
+         </div>
+      </div>
+      <div class="row">
+         <div class="number">
+            <span  onclick="calc(4);">4</span>
+            <span  onclick="calc(5);">5</span>
+            <span  onclick="calc(6);">6</span>
+         </div>
+         <div class="symbol">
+            <span  onclick="calc('-');">-</span>
+         </div>
+      </div>
+      <div class="row">
+         <div class="number">
+            <span  onclick="calc(1);">1</span>
+            <span  onclick="calc(2);">2</span>
+            <span  onclick="calc(3);">3</span>
+         </div>
+         <div class="symbol">
+            <span  onclick="calc('+');">+</span>
+         </div>
+      </div>
+      <div class="row">
+         <div class="number">
+            <span class="dull">AC</span>
+            <span  onclick="calc(0);">0</span>
+            <span  onclick="calc(',');">,</span>
+         </div>
+         <div class="symbol action">
+            <span onclick="equal();">=</span>
+         </div>
+      </div>
+   </div>
+</div>
+<p class="credit">
+   Inspired from the design by <a href="https://dribbble.com/shots/3998247-Calculator" target="_blank">Dennis</a>
+</p>
+<!-- partial -->
+
+<script>
+   const input = document.querySelector('.input');
+   input.textContent = '';
+
+   function calc(num){
+      input.innerHTML += num;
+
+   }
+
+   function equal(){
+      let evaluate = eval(input.innerHTML);
+      input.innerHTML += '<span>=' + evaluate + '</span>';
+   }
+</script>
+  
+</body>
+</html>
+ 

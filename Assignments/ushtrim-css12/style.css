@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 40px;
+}
+
+/* Card Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* Card Styling */
+.card {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+/* Title - Shifted Up */
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    position: relative;
+    bottom: 2.75rem;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Fixed Video Container */
+.video-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.video-container video {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.video-title {
+    font-weight: bold;
+    margin-top: 5px;
+}

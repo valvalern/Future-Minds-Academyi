@@ -1,0 +1,13 @@
+body {
+    padding-block: 8em;
+    height: 100vh;
+    position:  relative;
+    cursor: url(media/images/);
+}
+
+
+.p1{
+
+    text-shadow: 0em 0em 0.2em gray;
+ 
+}

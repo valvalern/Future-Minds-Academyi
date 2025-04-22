@@ -1,0 +1,15 @@
+h1 {
+    background-color: aquamarine;
+    color: rgb(96, 187, 96);
+}
+
+p {
+    background-color: bisque;
+    color: orange;
+}
+
+h2 {
+    width: 300px;
+    background-color: blue;
+    color: white;
+}

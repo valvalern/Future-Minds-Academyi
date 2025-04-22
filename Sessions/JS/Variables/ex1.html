@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Variables</title>
+</head>
+<body>
+    <h4 id="fName">First Name: </h4>
+    <h4 id="lName">Last Name: </h4>
+    <h4 id="myCity">City: </h4>
+    <h4 id="myStatus">Status: </h4>
+
+
+    <script>
+        let firstName = "Valerian"; 
+        let lastName = "Arifi";
+        let city = "Gjilan";
+        let status = "Married";
+
+        const fName = document.querySelector('#fName');
+        fName.innerHTML = "First Name: <i>" + firstName + "</i>";
+
+        const lName = document.querySelector('#lName');
+        lName.innerHTML = "Last Name: " + lastName;
+        const myCity = document.querySelector('#myCity');
+        myCity.innerHTML = "City: <i style='color:red';> " + city; + '</i>';
+        const myStatus = document.querySelector('#myStatus');
+        myStatus.innerHTML = "status: " + status;
+        
+        console.log(firstName + " " + lastName);
+    </script>
+</body>
+</html>

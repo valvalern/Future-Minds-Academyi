@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr;
+
+
+}
+
+img {
+    height: 30vw;
+    grid-column: 3/4;
+    grid-row: 2/4;
+}

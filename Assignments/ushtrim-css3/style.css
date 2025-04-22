@@ -1,0 +1,21 @@
+
+body {
+    background-image: url(backimg.png);
+}
+
+.title {
+    background: linear-gradient(90deg, hsla(286, 48%, 91%, 1) 0%, hsla(340, 73%, 75%, 1) 50%, hsla(263, 58%, 45%, 1) 100%);
+    color:blue;
+}
+
+.list {
+    background: linear-gradient(90deg, hsla(286, 48%, 91%, 1) 0%, hsla(340, 73%, 75%, 1) 50%, hsla(263, 58%, 45%, 1) 100%);
+    color:blue;
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.par {
+    color: blue;
+    background: linear-gradient(90deg, hsla(286, 48%, 91%, 1) 0%, hsla(340, 73%, 75%, 1) 50%, hsla(263, 58%, 45%, 1) 100%);
+}

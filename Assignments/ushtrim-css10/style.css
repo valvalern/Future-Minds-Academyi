@@ -1,0 +1,45 @@
+/* Reset default margin */
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+}
+
+/* Section Styling */
+section {
+    height: 25vh; /* Each section takes 25% of the screen height */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Alternating Background Colors */
+section:nth-child(odd) {
+    background-color: #3f3f3f;
+    color: white;
+}
+
+section:nth-child(even) {
+    background-color: #f5f3dc;
+    color: black;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2em;
+    max-width: 80%;
+}
+
+/* HR Styling */
+hr {
+    width: 33%;
+    border: 1px solid red;
+    margin-top: 10px;
+}

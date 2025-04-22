@@ -1,0 +1,40 @@
+@keyframes animacioni {
+    from{
+        background-color: blue;
+        color: white;
+        border-radius: 0;
+    }
+
+    to{
+        background-color: green;
+        color: beige;
+        border-radius: 15%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    padding: 5em 4em;
+    font-size: 3em;
+    background-color: blue;
+    color: white;
+    border-radius: 0;
+    animation-name: animacioni;
+    animation-duration: 2s;
+    animation-delay: 0.5;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+

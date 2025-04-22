@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Javascript</title>
+</head>
+
+<body>
+    <h1 onclick="alert('Hello');">Welcome to Javascript</h1>
+    <p id="vendi">I love Gjilani!</p>
+    <button onclick="ndrrojeVendin()">click me</button>
+
+    <script>
+        // vendi.textContent = 'I love Gavrani';
+        const vendi = document.querySelector('#vendi');
+        vendi.innerHTML = 'I love Gjilani & <b style="color: red;" >Gavrani!</b>';
+
+        function ndrrojeVendin() {
+            vendi.innerHTML = 'Future Minds Academy';
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+h1 {
+    background-color: pink;
+    color: rgb(178, 205, 115);
+
+}
+
+p {
+    background-color: rgb(116, 74, 116);
+    color: rgb(51, 61, 176);
+    font-size: 40px;
+}
+
+h2 {
+    width: 100px;
+    background-color: rgba(155, 18, 118, 0.477);
+    color: white;
+}

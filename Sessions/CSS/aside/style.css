@@ -1,0 +1,44 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: bisque;
+    padding: 100px 0 10px 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.list-name {
+    font-size: 1.5em;
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.list-items {
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+.list-items * {
+    padding: 0.3em;
+}
+
+.list-items *:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.;
+}
+
+.list-items *::before {
+    content: "- ";
+} 

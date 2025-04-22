@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+aside {
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(224, 239, 113);
+   background-image: url();
+   background-blend-mode: overlay;
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 2.5em;
+    padding-inline: auto;
+}
+
+li {
+    width: 90%;
+    margin-inline:auto;
+    padding-block: 1.5em;
+    border-radius: 2em;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1em;
+
+}
+
+li:hover{
+    background-color: aqua;
+
+}
+
+.li1{
+    background-color:rgba(48, 75, 174, 0.625);
+
+}
+
+div {
+    width: 80%;
+  
+}
+
+header {
+    display: flex;
+    align-content: baseline;
+    background-color: blue;
+    justify-content: space-between;
+    padding-inline: 1.5em;
+    height: 10vh;
+}
+
+.headerspan {
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 80%;
+    width: 25.6vh;
+}
+
+
+main {
+    background-color: rgb(87, 116, 231);
+    height: 80vh;
+    display: flex;
+    padding: 1em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    background-color: bisque;
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-inline: 1.5em;
+    border-radius: 6px;
+                
+}
+
+.upperdiv{
+    
+}
+
+footer{
+    background-color: aliceblue;
+    height: 10vh;
+    width: 50%;
+}
+
+.seaimg {
+    position: relative;
+    bottom: 1.2em;
+    z-index: 1;
+    transition-property: position, bottom;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 5px;
+
+}
+
+.htmlicon {
+    width: 0.9em;
+    height: 0.9em;
+    position: relative;
+    left: 7em;
+    bottom: 3em;
+}
+
+.seaimg:hover {
+    position: relative;
+    bottom: 4em;
+
+}
+
+.text {
+    padding-block: block;
+}
+
+.lowerdiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1em
+    
+}
+
+hr {
+    width: 80%;
+}
+@media (max-width: 768px){
+    aside{
+        display: none;
+    }
+
+    img {
+        display: block;
+    }
+
+    div{
+        width: 100%;
+    }
+    main {
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+}

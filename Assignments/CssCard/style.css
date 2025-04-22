@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 1em;
+    width: 95vw;
+    height: 90%;
+    background-color: grey;
+}
+
+.card-left {
+    margin: 2.5em 0.5em 2em 2.5em;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+
+    max-width: 500px;
+    min-width: 300px;
+    margin: 3em 0.5em 1em 0.5em;
+
+}
+
+.sizes-container {
+    position: relative;
+    margin-bottom: 1em;
+    margin-left: 0.8em;
+}
+
+.sizes {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.size {
+    width: 3.8em;
+    height: 3.8em;
+    text-align: center;
+    align-content: center;
+    border: 1px solid black;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+.size-label {
+    position: relative;
+    bottom: 0.2rem;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+.card-right {
+    height: 100%;
+    margin: 2.5em 1.5em 2em 2.5em;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.product-description {
+    text-transform: lowercase;
+    margin-left: 0.8rem;
+    margin-top: 1em;
+    font-size: 1.5vw;
+}
+
+.product-category {
+    font-size: 1vw;
+    margin: 1rem 1rem 0em 1rem;
+}
+
+.product-title {
+    margin-left: 0.8rem;
+    font-size: 2.5vw;
+    line-height: 1.2em;
+}
+
+.product-price {
+    font-size: 3vw;
+    margin-left: 0.8rem;
+}
+
+.finalize {
+    top: 2.8rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.8rem;
+}
+
+.add-to-cart-button {
+    width: 90%;
+    background-color: black;
+    color: white;
+    padding: 0.8em;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-right: 0.5em;
+}
+
+.dropdown-button {
+    width: 10%;
+    background-color: black;
+    color: white;
+    padding: 0.8rem;
+    font-size: 2vw;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+.size:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+

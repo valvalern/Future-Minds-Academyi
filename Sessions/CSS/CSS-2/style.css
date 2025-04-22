@@ -1,0 +1,24 @@
+.p1{
+    background-color: blue;
+    width: 300px;
+}
+
+.p2{
+    background-color: green;
+    width: 60%;
+}
+
+.p3{
+    background-color: blueviolet ;
+    width: 30cm;
+    height: 3cm;
+    border-radius: 0 30% 30% 0;
+}
+input {
+    display: block;
+}
+p {
+    display: inline;
+    visibility: show;
+    display: block
+}

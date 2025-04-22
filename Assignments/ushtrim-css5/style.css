@@ -1,0 +1,19 @@
+.gen {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bolder;
+    background-color: grey;
+    text-align: center;
+}
+
+.word {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.letter {
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: red;
+}

@@ -1,0 +1,123 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 150vh;
+    cursor: url(pngtree-wolf-logo-png-image_2306634.jpg), pointer;
+    position: relative;
+    
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    width: 20vw;
+    height: 100vh;
+    background-color: green;
+    position: sticky;
+}
+
+header {
+    width: 80vw;
+    background-color: blue;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    position: relative;
+    width: 80vw;
+    background-color: aquamarine;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer {
+    width: 80vw;
+    background-color: blueviolet;
+    height: 10vh;
+    align-content: center;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-wrap: nowrap;
+}
+
+li:hover {
+    background-color: rgba(60, 203, 210, 0.769);
+    box-shadow: inset 7px 17px 42px -9px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 7px 17px 42px -9px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 7px 17px 42px -9px rgba(0, 0, 0, 0.6);
+    ;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section {
+    border: 3px solid black;
+    text-align: center;
+    align-content: center;
+    padding-inline: 0.2em;
+    height: 40%;
+    margin-inline: 4em;
+    border-radius: 2em;
+    margin-top: 2em;
+    width: 40%;
+}
+
+section:hover {
+    background-color: rgb(132, 255, 0);
+    border: 0;
+    font-style: italic;
+    box-shadow: 7px 17px 42px -9px rgb(15, 135, 7);
+    -moz-box-shadow: 7px 17px 42px -9px rgb(11, 133, 29);
+    box-shadow: 7px 17px 42px -9px rgb(20, 176, 43);
+    ;
+}
+
+#s1 {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 1.5em;
+}
+
+li {
+    padding-inline: 0.5em;
+    padding-block: 0.5em;
+    margin: 0.2em;
+    border-radius: 2em;
+}
+
+.p1 {
+    margin: 2em;
+}
+
+.wrapper {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

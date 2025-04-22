@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+table {
+    width: 300px;  /* Reduced size but keeping proportions */
+    height: 300px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px; /* Reduce padding to fix spacing */
+}
+
+th {
+    background-color: #4CAF50;
+    font-weight: bold;
+    text-align: left; /* Align text left in the header */
+    padding-left: 10px; /* Ensures alignment with body rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #2e7d32;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #66bb6a;
+    color: white;
+}
+
+td {
+    text-align: left; /* Left-align text to match header */
+    padding-left: 10px; /* Align text with header */
+}
+
+/* Keeps only horizontal borders */
+td, th {
+    border-bottom: 2px solid white;
+    border-left: none;
+    border-right: none;
+}
