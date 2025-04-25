@@ -1,1 +1,1 @@
-# Future-Minds-Academyi
+# Future-Minds-Academy
