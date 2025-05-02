@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or odd</title>
+</head>
+
+<body>
+
+    <script>
+
+        let num = Number(prompt('Enter your number:'));
+        if (Number.isInteger(num)){
+            if (num % 2 == 0)
+                console.log(`The number ${num} is even`);
+            else 
+                console.log(`The number ${num} is odd`);
+        }
+        else 
+            console.log(`Error: either not a number or not an integer`);
+        
+
+
+    </script>
+</body>
+
+</html>

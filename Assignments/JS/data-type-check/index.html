@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data type checker</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        // let input = prompt('Enter a single character: ').toLowerCase();
+        // let vowel = 'aeiouy'
+
+        // if (!input || input.length !== 1) {
+        //     console.log('Please enter only one character');
+        // }
+        // else {
+        //     if (typeof input === 'string') {
+        //         if (vowel.includes(input)) {
+        //             console.log('Its a vowel')
+        //         }
+        //         else {
+        //             console.log('Its a consonant')
+        //         }
+
+        //     }
+        //     else if (!isNaN(input)) {
+        //         console.log('Its a number')
+        //     }
+        //     else {
+        //         console.log('Its a symbol or special character')
+        //     }
+        // }
+
+
+
+        let input = prompt('Enter a single character:').toLowerCase();
+
+        let vowels = 'aeiouy';
+        let letters = 'abcdefghijklmnopqrstuvwxyz';
+
+        if (!input || input.length !== 1) {
+            console.log('Please enter exactly one character.');
+        } else {
+            if (!isNaN(input)) {
+                console.log('It\'s a number.');
+            } else if (vowels.includes(input)) {
+                console.log('It\'s a vowel.');
+            } else if (letters.includes(input)) {
+                console.log('It\'s a consonant.');
+            } else {
+                console.log('It\'s a symbol or special character.');
+            }
+        }
+
+    </script>
+</body>
+
+</html>

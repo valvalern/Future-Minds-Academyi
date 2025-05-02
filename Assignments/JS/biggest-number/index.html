@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest number of Three</title>
+</head>
+<body>
+    
+    <script>
+
+        let num1 = parseInt(prompt('Enter your first number: '))
+        let num2 = parseInt(prompt('Enter your second number: '))
+        let num3 = parseInt(prompt('Enter your three number: '))
+
+        if ( num1 > num2 && num1 > num3){
+            console.log(`${num1} is the biggest number`);
+        }
+        else if (num2 > num1 && num2 > num3){
+            console.log(`${num2} is the biggest number`);
+        }
+        else {
+            console.log(`${num3} is the biggest number`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple guessing game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="results-container">
+        <div class="results-content">
+            <p class="answer">The correct answer is 5</p>
+            <div class="guess-container">
+                <div class="guess-wrapper" id="wrapper1">
+                    <span class="player">Player one</p>
+                        <span class="guess" id="guess1">apple</span>
+                </div>
+                <div class="guess-wrapper" id="wrapper2">
+                    <span class="player">Player two</p>
+                        <span class="guess" id="guess2">plastic bag</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        let answer = Math.floor(Math.random() * 20) + 1;
+
+        let playerOne = parseInt(prompt('Player one: '));
+        let playerTwo = parseInt(prompt('Player two: '));
+
+        if (isNaN(playerOne) || isNaN(playerTwo))
+            throw new Error('Only write numbers please!');
+
+        if ((playerOne < 0 || playerOne > 20) || (playerTwo < 0 || playerTwo > 20))
+            throw new Error('Only enter numbers between 0-20');
+
+        let playerOneDistance = Math.abs(answer - playerOne);
+        let playerTwoDistance = Math.abs(answer - playerTwo);
+
+        let winner;
+        console.log(`The correct answer is ${answer}`);
+
+        if (playerOneDistance - playerTwoDistance == 0)
+            console.log('Its a tie')
+        else {
+            if (playerOneDistance < playerTwoDistance) {
+                winner = 'Player One';
+                console.log(`The winner is ${winner}`);
+            }
+            else
+                winner = 'Player two';
+                console.log(`The winner is ${winner}`);
+        }
+
+        
+        let playerOneWrapper = document.querySelector('#wrapper1');
+        let playerTwoWrapper = document.querySelector('#wrapper2');
+        let answerUI = document.querySelector('.answer');
+        answerUI.innerHTML = `The correct answer is ${answer}`;
+        let playerOneGuess = document.querySelector('#guess1');
+        playerOneGuess.innerHTML = `${playerOne}`;
+        let playerTwoGuess = document.querySelector('#guess2');
+        playerTwoGuess.innerHTML = `${playerTwo}`;
+
+        if ((playerOneDistance < playerTwoDistance) || (playerTwoDistance < playerOneDistance)) {
+            if (winner == 'Player One') {
+                playerOneWrapper.style.backgroundColor = 'green';
+                playerTwoWrapper.style.backgroundColor = 'red';
+            }
+            else {
+                playerOneWrapper.style.backgroundColor = 'red';
+                playerTwoWrapper.style.backgroundColor = 'green';
+            }
+        } else {
+            playerOneWrapper.style.backgroundColor = 'darkorange';
+            playerTwoWrapper.style.backgroundColor = 'darkorange';
+
+        }
+
+
+    </script>
+</body>
+
+</html>
