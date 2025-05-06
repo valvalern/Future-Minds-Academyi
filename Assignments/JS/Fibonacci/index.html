@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci sequence</title>
+</head>
+
+<body>
+
+    <script>
+
+        let num = parseInt(prompt('Enter a number: '));
+        let a = 0;
+        let b = 1;
+        console.log(a)
+        console.log(b)
+
+        for(let i = 2; i<num; i++){
+            let next = a + b;
+            a = b;
+            b = next;
+            console.log(next);
+        }
+
+
+
+    </script>
+</body>
+
+</html>
