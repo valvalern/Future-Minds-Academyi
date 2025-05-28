@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp</title>
+</head>
+<body>
+    
+    <script>
+
+        const temperature = 'New York, -15\u00B0C'
+        const comma = temperature.indexOf(',');
+        const string = temperature.trim().slice(0, comma);
+        const number = parseInt(temperature.trim().slice(comma + 2));
+        console.log(temperature)
+        console.log(string)
+        console.log(number)
+    </script>
+</body>
+</html>

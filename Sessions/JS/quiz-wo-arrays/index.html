@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz w/o arrays</title>
+</head>
+<body>
+    
+    <script>
+
+        let points = 0;
+
+        function question1 (){
+            let question = prompt(`Cili eshte kryeqyteti i Shqiperise?
+                                   1.Prishtina
+                                   2.Tirana
+                                   3.Shkupi
+                                   4.Durresi  `)
+            if (answer == '2')
+                points += 10;
+            else 
+                points -= 5;
+        }  
+        
+        function question2 (){
+            let question = prompt(`How many oceans and continents are there?
+                                   1. 4 oceans and 5 continents
+                                   2. 6 oceans and 8 continents
+                                   3. 5 oceans and 7 continents
+                                   4. 4 oceans and 7 continents`)
+            
+            if (question === '3')
+                points++
+            return points
+
+        }
+
+        function question3 (){
+            let question = prompt(`What year was Kosovo's independence declared?
+                                   1. 2007
+                                   2. 2008
+                                   3. 1998
+                                   4. may 8th 2007`)
+            let answer = '2'
+            if (question === answer)
+                points++
+            return points
+        }
+
+        setTimeout (question1, 10000)
+        setTimeout(question2, 100000)
+        setTimeout(question3, 100000)
+
+       function points (){
+          if (points ===3)
+          alert(`You got ${points}/3 points, Thats very impressive!... for a third grader.`)
+        else if (points == 2)
+            alert(`You got ${points}/3 points, its fine I guess...`)
+        else if (points == 1)
+            alert(`You only got 1 point. You REALLY should go to school`)
+        else 
+            alert(`You got... 0 points? Really? This is common knowledge.`)}
+
+            setTimeout(points, 300000)
+
+        
+
+
+        // function question(questionOut, answerOut){
+
+        //     let question = questionOut;
+        //     let answer = answerOut;
+        //     if (question == answer)
+        //         points++
+
+
+            
+        // }
+
+
+
+        // for (let i =1; i <=3; i++) {
+        //     if (i === 1) pyetje1();
+        //     else if (i === 2) pyetje2();
+        //     else if (i === 3 ) pyetje3()
+        // }
+
+
+        // function shfaqeRezultatin(){
+        //     if (score >= 20){
+        //         alert()
+
+        //     } else {
+        //         alert()
+        //     }
+        // }    
+
+        // shfaqeRezultatin()
+
+
+
+    </script>
+</body>
+</html>

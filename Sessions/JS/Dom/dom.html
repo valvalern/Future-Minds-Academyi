@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading">Hello</h1>
+    
+    <script>
+        let heading = document.querySelector('#heading');
+        heading.innerHTML = 'Pershendetje';
+        heading.style.backgroundColor = 'green';
+
+        let subheading = document.createElement('h2');
+        subheading.textContent = 'I am a subheading';
+        document.body.appendChild(subheading);
+
+    </script>
+</body>
+</html>

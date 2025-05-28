@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // let student = {
+        //     firstName: 'Filan',
+        //     lastName: 'Fisteku',
+        //     department: 'CS',
+        //     Greet: function(){
+        //         console.log('Pershendetje')
+        //     },
+
+        //     getName: function(){
+        //         return this.name;
+        //     },
+        //     setName: function(firstName){
+        //         this.firstName = firstName;
+        //     }
+        // }
+
+        // console.log(student.fullName, student.lastName, student.department)
+        // student.Greet();
+
+
+        let circle = {
+            radius: 3,
+
+            getRadius: function(){
+                return this.radius
+            },
+
+            setRadius: function(radius){
+                this.radius = radius
+            },
+
+
+
+            getArea: function(){
+                return this.radius**2 * Math.PI;
+            },
+
+            getPerimeter: function(){
+                return this.radius *2 * Math.PI;
+            },
+        
+             center: { 
+                x: 5 ,
+                y: 3
+            },
+
+            getCenter: function(){
+                return this.center
+            },
+
+            setCenter: function(center){
+                this.center = center
+            },
+
+            grow: function(number){
+                this.radius += number;
+            },
+
+            shrink: function(number){
+                this.radius -= number;
+            },
+
+            equals: function(circleTwo){
+                return this.radius === circleTwo.radius &&
+                    this.center.x === circleTwo.center.x &&
+                    this.center.y === circleTwo.center.y;
+            },
+
+            printDetails: function(){
+                console.log(this.getPerimeter(), this.getArea(), this.getCenter())
+            }
+
+
+        }
+
+        let circleTwo = {
+            radius: 5,
+            center: {
+                x: 4,
+                y: 5
+            }
+        }
+
+
+
+
+        console.log(circle.printDetails())
+    </script>
+</body>
+</html>
